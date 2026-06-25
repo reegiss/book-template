@@ -82,7 +82,7 @@ make book BOOK_LANG=en  # → book-en.md (English)
 ├── kdp-pdf.yaml         # PDF layout (shared)
 ├── kdp-epub.yaml        # EPUB config (shared)
 ├── Makefile
-└── CLAUDE.md            # Claude Code instructions
+└── .gitignore
 ```
 
 ## Cover image
