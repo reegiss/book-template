@@ -7,10 +7,10 @@ BOOK_LANG="${1:-pt}"
 
 if [ "$BOOK_LANG" = "en" ]; then
   INPUT="book-en.md"
-  OUTPUT_DIR="chapters-en"
+  OUTPUT_DIR="chapters/en"
 else
   INPUT="book.md"
-  OUTPUT_DIR="chapters"
+  OUTPUT_DIR="chapters/pt"
 fi
 
 [[ -f "$INPUT" ]] || { echo "Error: $INPUT not found" >&2; exit 1; }

@@ -8,14 +8,14 @@ command -v pandoc >/dev/null || { echo "Error: pandoc not found" >&2; exit 1; }
 mkdir -p dist
 
 if [ "$BOOK_LANG" = "en" ]; then
-  CHAPTERS_DIR="chapters-en"
+  CHAPTERS_DIR="chapters/en"
   METADATA_FILE="kdp-metadata-en.yaml"
   LAYOUT_FILE="kdp-epub-en.yaml"
   OUTPUT="dist/book-en.epub"
   TOC_TITLE="Table of Contents"
   COVER="cover-en.jpg"
 else
-  CHAPTERS_DIR="chapters"
+  CHAPTERS_DIR="chapters/pt"
   METADATA_FILE="kdp-metadata.yaml"
   LAYOUT_FILE="kdp-epub.yaml"
   OUTPUT="dist/book.epub"

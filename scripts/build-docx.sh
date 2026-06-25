@@ -8,12 +8,12 @@ command -v pandoc >/dev/null || { echo "Error: pandoc not found" >&2; exit 1; }
 mkdir -p dist
 
 if [ "$BOOK_LANG" = "en" ]; then
-  CHAPTERS_DIR="chapters-en"
+  CHAPTERS_DIR="chapters/en"
   METADATA_FILE="kdp-metadata-en.yaml"
   OUTPUT="dist/book-en.docx"
   TOC_TITLE="Table of Contents"
 else
-  CHAPTERS_DIR="chapters"
+  CHAPTERS_DIR="chapters/pt"
   METADATA_FILE="kdp-metadata.yaml"
   OUTPUT="dist/book.docx"
   TOC_TITLE="Sumário"

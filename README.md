@@ -65,11 +65,12 @@ make book BOOK_LANG=en  # → book-en.md (English)
 
 ```
 .
-├── chapters/            # pt-BR chapters (source of truth)
-│   ├── chapter-00.md   # Title page
-│   ├── chapter-01.md   # Introduction
-│   └── chapter-02.md   # Chapter 1 skeleton
-├── chapters-en/         # English translation
+├── chapters/
+│   ├── pt/             # pt-BR chapters (source of truth)
+│   │   ├── chapter-00.md   # Title page
+│   │   ├── chapter-01.md   # Introduction
+│   │   └── chapter-02.md   # Chapter 1 skeleton
+│   └── en/             # English translation
 ├── scripts/
 │   ├── generate-book.sh
 │   ├── build-pdf.sh

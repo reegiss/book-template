@@ -4,11 +4,11 @@ set -euo pipefail
 BOOK_LANG="${1:-pt}"
 
 if [ "$BOOK_LANG" = "en" ]; then
-  CHAPTERS_DIR="chapters-en"
+  CHAPTERS_DIR="chapters/en"
   OUTPUT="book-en.md"
   TITLE="{{BOOK_TITLE_EN}}"
 else
-  CHAPTERS_DIR="chapters"
+  CHAPTERS_DIR="chapters/pt"
   OUTPUT="book.md"
   TITLE="{{BOOK_TITLE}}"
 fi
