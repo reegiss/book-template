@@ -88,8 +88,16 @@ make book BOOK_LANG=en  # → book-en.md (English)
 
 ## Cover image
 
-Place `cover.jpg` (pt-BR) and/or `cover-en.jpg` (English) in the repo root.
-They are picked up automatically by `make epub`.
+The `cover/` directory contains editable SVG templates (`cover-pt.svg`, `cover-en.svg`).
+Open them in Figma, Inkscape, or any vector editor to customize.
+
+To export to JPG (requires `inkscape` or `librsvg` + ImageMagick):
+
+```bash
+./scripts/export-cover.sh
+```
+
+This generates `cover.jpg` and `cover-en.jpg` in the repo root, which are picked up automatically by `make epub`.
 
 ## License
 

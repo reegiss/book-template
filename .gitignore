@@ -5,5 +5,7 @@ texput.log
 *.log
 *.out
 *.toc
+cover.jpg
+cover-en.jpg
 
 CLAUDE.md
