@@ -11,6 +11,8 @@ geometry:
   - bottom=2.2cm
   - twoside
 header-includes: |
+  \usepackage{xcolor}
+  \usepackage{tikz}
   \usepackage{fvextra}
   \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\},breaklines,breakanywhere,fontsize=\footnotesize}
   \RecustomVerbatimEnvironment{verbatim}{Verbatim}{breaklines,breakanywhere,fontsize=\footnotesize}
@@ -20,3 +22,4 @@ header-includes: |
   \AtBeginEnvironment{longtable}{\small}
   \setlength{\emergencystretch}{3em}
   \usepackage{microtype}
+  \renewcommand{\maketitle}{}

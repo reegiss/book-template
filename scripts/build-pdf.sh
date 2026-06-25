@@ -30,9 +30,6 @@ pandoc "${files[@]}" \
   --metadata-file="$METADATA_FILE" \
   --metadata-file="$LAYOUT_FILE" \
   --pdf-engine=xelatex \
-  --toc \
-  --toc-depth=2 \
-  -V toc-title="$TOC_TITLE" \
   --output="$OUTPUT"
 
 echo "✓ $OUTPUT generated."
