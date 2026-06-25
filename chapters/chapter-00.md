@@ -1,0 +1,5 @@
+# {{BOOK_TITLE}}
+
+**{{BOOK_SUBTITLE}}**
+
+*{{AUTHOR_NAME}}*
